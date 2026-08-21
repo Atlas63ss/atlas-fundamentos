@@ -10,7 +10,7 @@ def suma(lista):
         total += precio
     return total
 
-def max(lista):
+def maximo(lista):
     max = 0
     for precio in lista:
         if precio > max:
@@ -33,5 +33,5 @@ while True:
     precios.append(precio)
 
 
-print(f'La lista de precios es: {precios}, y son {len(precios)} productos. En total cuestan {suma(precios)} euros, y el producto más caro cuesta {max(precios)} euros.')
+print(f'La lista de precios es: {precios}, y son {len(precios)} productos. En total cuestan {suma(precios)} euros, y el producto más caro cuesta {maximo(precios)} euros.')
 
