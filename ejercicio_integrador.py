@@ -11,11 +11,11 @@ def suma(lista):
     return total
 
 def maximo(lista):
-    max = 0
+    mayor = 0
     for precio in lista:
-        if precio > max:
-            max = precio
-    return max
+        if precio > mayor:
+            mayor = precio
+    return mayor
 
 precios = []
 
