@@ -32,6 +32,10 @@ while True:
         continue
     precios.append(precio)
 
-
-print(f'La lista de precios es: {precios}, y son {len(precios)} productos. En total cuestan {suma(precios)} euros, y el producto más caro cuesta {maximo(precios)} euros.')
+if len(precios) < 1:
+    print("No hay productos en la lista")
+elif len(precios) == 1:
+    print(f'Solo hay un producto, y cuesta {precios[0]} euros.')
+else:
+    print(f'La lista de precios es: {precios}, y son {len(precios)} productos. En total cuestan {suma(precios)} euros, y el producto más caro cuesta {maximo(precios)} euros.')
 
